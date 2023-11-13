@@ -1,0 +1,143 @@
+/*
+ * Hero Section - Home Page CSS
+ */
+.bg-hero {
+    background-image: url("../image/image1.jpg");
+    background-position: center;
+    background-size: cover; /* Isso garante que a imagem cubra toda a área da div, mantendo a proporção */
+    overflow: hidden; /* Corta qualquer parte da imagem que exceda os limites da div */
+    height: 100vh; /* Defina a altura da div conforme necessário, neste exemplo é 100% da altura da visualização */
+    width: 100%; /* A largura é definida como 100% para ocupar toda a largura da div */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor cinza com 50% de opacidade */
+}
+
+.bg-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo cinza com uma certa transparência (0.5 para 50%) */
+}
+
+/* Adicione estilos adicionais para textos e botões, por exemplo: */
+.bg-hero .content {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    color: white;
+    text-align: left;
+    z-index: 1; /* Garante que o conteúdo fique acima da camada cinza */
+}
+
+.bg-hero .content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/*
+ * Presentation Section - Home Page CSS
+ */
+.section-presentation {
+    display: flex;
+    height: 50vh;
+    font-size: 1.6rem;
+    align-items: center;
+}
+
+.presentation-right {
+    float: left;
+    margin: auto;
+}
+
+.presentation-right p {
+    padding: 10px;
+}
+
+.presentation-left {
+    float: left;
+    background-image: url("../image/xferatech.png");
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    min-width: 250px;
+}
+
+@media (max-width: 1200px)  {
+    .presentation-left {
+        display: none;
+    }
+    .presentation-right {
+        float: left;
+        width: 100% !important;
+    }
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.custom-card-cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.bg-1 {
+    background-image: url('../image/image2.jpg');
+}
+
+.bg-2 {
+    background-image: url('../image/image5.jpg');
+}
+
+.bg-3 {
+    background-image: url('../image/image6.jpg');
+}
+
+.custom-card-label {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 1.2rem;
+    height: 120px;
+}
+
+.custom-card-def {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.custom-card-col {
+    height: 600px;
+}
+
+/*
+ * Our Products Section - Home Page
+ */
+
+
+
+.bg-4 {
+    background-image: url('../image/moodle.jpg');
+}
+
+.bg-5 {
+    background-image: url('../image/event.jpg');
+}
+
+.bg-6 {
+    background-image: url('../image/solution.jpg');
+}
+
+.bg-6 {
+    background-image: url('../image/smarthome.jpg');
+}
